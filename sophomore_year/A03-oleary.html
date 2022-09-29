@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+
+<html>
+
+    <!--Formatting-->
+    <style>
+        .center 
+        {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 40%;
+        }
+        .text
+        {
+            position: absolute;
+            margin: auto;
+            font-size: 150%;
+        }
+        .column
+        {
+            float: left;
+            width: 30%;
+            padding: 5px;
+
+        }
+
+        .row::after 
+        {
+            content: "";
+            clear: both;
+            display: table;
+        }
+        html, body
+        {
+            position: fixed;
+            top:0;
+            bottom:0;
+            left:0;
+            right:0;
+        }
+        h1
+        {
+            text-shadow: 3.5px 2.5px #444;
+            color: red;
+            text-align: center;
+            font-size: 325%;
+            font-family: Copperplate, Papyrus, fantasy;
+        }
+        table
+        {
+            background-color: red; color:white;
+            border-collapse: collapse; border: 1px;
+            font-family: arial; font-weight: normal;
+            margin-right: auto; margin-left: auto;
+        }
+        th
+        {
+            background-color: grey;
+            font-size: 17px; font-weight: bold;
+        }
+    </style>
+    <!--header-->
+    <header>
+        <h1>Aidan O'Leary's Home Page</h1>
+        <hr>
+    </header>
+
+    <!--Body-->
+    <body>
+        <!--text-->
+        <div class="text">
+
+            <div class="row">
+
+                <div class="column">
+                    <h3><u>A little bit about me:</u></h3>
+                    <ul>
+                        <li>I'm majoring in Computer Science</li>
+                        <li>I have a very energetic personality</li>
+                        <li>I'm a very caring and compationate person</li> 
+                        <li>I have an addiciton to collecting music vinyls</li>
+                        <li>I recently became very interested in reading books that interest me</li>
+                        <li>I find coding very fun because of the problem solving aspect</li>
+                    </ul>
+                    <br>
+                    <h3><u>Coding projects I have worked on:</u></h3>
+                    <ul>
+                        <li>Chat bots</li>
+                        <li>Raspberry pi weather tracking api programs</li>
+                        <li>Using an arduino to flicker a lamp whenever I get an email</li>
+                        <li>Make-shift ring doorbell</li>
+                    </ul>
+                </div>
+
+                <div class="column">
+                    <h3><u>Places I would love to visit:</u></h3>
+                    <ol>
+                        <li>Ireland</li>
+                        <li>Colorado</li>
+                        <li>Jamaca</li>
+                        <li>London</li>
+                        <li>Costa Rica</li>
+                        <li>Japan</li>
+                    </ol>
+
+                    <br>
+                    <br>
+                    <br>
+                    <h3><u>Some favorite things of mine:</u></h3>
+
+                    <table border="1">
+                        <tr>
+                            <th>Food</th>
+                            <td>Spaghetti</td>
+                        </tr>
+                        <tr>
+                            <th>Coding language</th>
+                            <td>Java</td>
+                        </tr>
+                        <tr>
+                            <th>Book</th>
+                            <td>The Elegant Universe</td>
+                        </tr>
+                        <tr>
+                            <th>TV show</th>
+                            <td>Adventure Time</td>
+                        </tr>
+                        <tr>
+                            <th>Place</th>
+                            <td>Sedona Arizona</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="column">
+                    <h3><u>Pictures:</u></h3>
+                    <img src="aruba.jpg" width="350;" height="175">
+                    <img src="aidan.jpg" width="200;" height="250;">
+                    <img src="ari.jpg" width="350;" height="175;">
+                </div>
+
+            </div>
+
+        </div>
+        <!--Background image-->
+        <img src="https://goredfoxes.com/images/logos/site/site.png" class="center" style="opacity: 25%;">
+    </body>
+
+    <!--Footer-->
+    <footer>
+        <br>
+        <br>
+        <hr>
+        <p>Email<a href="mailto: aidan.oleary1@marist.edu"> Aidan</a></p>
+        <p><i>(c) Aidan O'Leary</i></p>
+    </footer>
+</html>
