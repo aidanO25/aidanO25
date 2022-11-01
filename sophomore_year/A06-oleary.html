@@ -1,0 +1,241 @@
+<!--
+Aidan O'Leary
+October 4th, 2022
+-->
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <!--Head and style-->
+    <head>
+        <title> My MYSQL Reference Page </title>
+        <meta charset=""utf-8>
+
+        <!--Styles for the table and title-->
+        <style>
+
+            table 
+            {
+                background-color: lightcoral; color:black;
+                border-collapse: collapse; border: 1px;
+                font-family: arial; font-weight: normal;
+                table-layout: auto; margin-left: 33%;
+                margin-right: 33%;
+            }
+
+            th
+            {
+                background-color: grey;
+                font-size: 17px; font-weight: bold;
+            }
+
+            td
+            {
+                font-size: 15p; padding-left: 5px; padding-right: 5px;
+            }
+
+            h1
+            {
+                color: red;
+            }
+
+            tr:nth-child(even) {background-color: silver;}
+
+        </style>
+    </head>
+
+    <!--header-->
+    <header>
+        <h1 style="color:red;"> My MySQL Reference Page </h1>
+    </header>
+    <hr>
+
+    <!--Body-->
+    <body>
+        <h2 style="text-align:center;">Database Commands</h2>
+
+            <table border="1">
+                <tr>
+                    <th>Syntax</th>
+                    <th>Description</th>
+                </tr>
+
+                <tr>
+                    <td>cd /usr/local/mysql/bin/</td>
+                    <td>"opens up" MySql</td>
+                </tr>
+
+                <tr>
+                    <td>./mysql -u root -p</td>
+                    <td>Connecting to MySql</td>
+                </tr>
+
+                <tr>
+                    <td>Create database if not exists 'database';</td>
+                    <td>Creates a new database</td>
+                </tr>
+
+                <tr>
+                    <td>Show databases;</td>
+                    <td>Allows you to view all created databases</td>
+                </tr>
+
+                <tr>
+                    <td>Use 'database';</td>
+                    <td>Changes the database you are working on</td>
+                </tr>
+
+            </table>
+
+        <h2 style="text-align:center;">Table Column Commands</h2>
+            <table border="1">
+                <tr>
+                    <th>Syntax</th>
+                    <th>Description</th>
+                </tr>
+
+                <tr>
+                    <td>Select * from 'database';</td>
+                    <td>Displays all tables in that database</td>
+                </tr>
+
+                <tr>
+                    <td>Create table if not exists 'table';</td>
+                    <td>Creates a new table</td>
+                </tr>
+
+                <tr>
+                    <td>Create table 'table' values(fname Char(20), age INT);</td>
+                    <td>Creates a table with values embedded in it</td>
+                </tr>
+
+                <tr>
+                    <td>Explain 'tabe';</td>
+                    <td>Shows the values that the table has (Ex: fname, Char(20))</td>
+                </tr>
+
+                <tr>
+                    <td>Select * from 'table';</td>
+                    <td>Shows the contents that is contained in the table</td>
+                </tr>
+
+            </table>
+
+        <h2 style="text-align:center;">Column Attributes and Modifiers</h2>
+            <table border="1">
+                <tr>
+                    <th>Syntax</th>
+                    <th>Description</th>
+                </tr>
+
+                <tr>
+                    <td>Int</td>
+                    <td>An integer -2,147,483,648 to 2,147,483,647</td>
+                </tr>
+
+                <tr>
+                    <td>DECIMAL</td>
+                    <td>A floating point number tha can specify the number of permissible
+                        digits. For example, Decimal(5,2) permits -999.99 to 999.99</td>
+                </tr>
+
+                <tr>
+                    <td>DOUBLE</td>
+                    <td>A double-percision floating point number</td>
+                </tr>
+
+                <tr>
+                    <td>DATE</td>
+                    <td>A date in teh YYY-MM-DD format</td>
+                </tr>
+                
+                <tr>
+                    <td>TIME</td>
+                    <td>A time in the HH:MM:SS format</td>
+                </tr>
+
+                <tr>
+                    <td>DATETIME</td>
+                    <td>A combined date and time in the format YYYY-MM-DD HH:MM:SS</td>
+                </tr>
+
+                <tr>
+                    <td>TIMESTAMP</td>
+                    <td>Automatic date and time of last record entry</td>
+                </tr>
+
+                <tr>
+                    <td>CHAR()</td>
+                    <td>A string of defined fixed length up to 22 characters long. For example
+                        CHAR(100) pads a smaller string to make it 100 characters long</td>
+                </tr>
+
+                <tr>
+                    <td>VARCHAR()</td>
+                    <td>A string of variable length up to 255 characers long that is stored
+                        without padding</td>
+                </tr>
+
+                <tr>
+                    <td>TEXT</td>
+                    <td>A strin gup to 65,535 characters long</td>
+                </tr>
+
+                <tr>
+                    <td>BLOB</td>
+                    <td>A binary type for variable data</td>
+                </tr>
+
+                <tr>
+                    <td>ENUM()</td>
+                    <td>A single string value from a defined list. For example, ENUM("red", 
+                        "green", "blue") allows entry of any one of these three colors only</td>
+                </tr>
+
+                <tr>
+                    <td>SET()</td>
+                    <td>A string gor mulitple strings form a defined list. For example,
+                        SET("red", "green", "blue") allows entry of any one, or more, of 
+                        these colors</td>
+                </tr>
+
+            </table>
+
+        <h2 style="text-align:center;">Table Data Commands</h2>
+            <table border="1">
+                <tr>
+                    <th>Syntax</th>
+                    <th>Description</th>
+                </tr>
+
+                <tr>
+                    <td>alter table 'table' add column 'column' datatype;</td>
+                    <td>This command allows you to add another column to the table</td>
+                </tr>
+
+                <tr>
+                    <td>alter table 'table' drop column 'column';</td>
+                    <td>This command "delets" the specified column</td>
+                </tr>
+
+                <tr>
+                    <td>alter table 'table' modify column 'column' datatype;</td>
+                    <td>this command allows you to change the datatype of a column</td>
+                </tr>
+
+                <tr>
+                    <td>update 'table' set 'column' = 'value' where 'condition';</td>
+                    <td>This command allows you to update a row in the table</td>
+                </tr>
+
+            </table>
+    </body>
+
+    <!--Footer-->
+    <footer>
+        <hr>
+        <p><small>(C) A O'Leary</small></p>
+        <p><small> October 4th, 2022</small></p>
+        <br>
+    </footer>

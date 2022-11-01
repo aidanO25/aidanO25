@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<!--L02-oleary.html Lab2 HTML Reference 09/09/2022 -->
+
+<html lang="en">
+<!--Title-->
+    <head>
+        <title> My HTML Reference</title>
+        <meta charset=""utf-8>
+
+        <!--Styles for the table and title-->
+        <style>
+
+            table 
+            {
+                background-color: darkseagreen; color:black;
+                border-collapse: collapse; border: 1px;
+                font-family: arial; font-weight: normal;
+                margin-right: auto; margin-left: auto;
+            }
+
+            th
+            {
+                background-color: grey;
+                font-size: 17px; font-weight: bold;
+            }
+
+            td
+            {
+                font-size: 15p; padding-left: 5px; padding-right: 5px;
+            }
+
+            h1
+            {
+                color: red;
+            }
+
+            tr:nth-child(even) {background-color: silver;}
+
+        </style>
+    </head>
+
+<!--Body with links-->
+    <body>
+        <header>
+            <h1 style="color:blue;"> My HTML Reference Page</h1>
+        </header>
+        <hr>
+            <nav> 
+                <ul>
+                    <li><a href="https://www.w3schools.com/html/html5_semantic_elements.asp">Structural Elements</a></li>
+                    <li><a href="https://www.w3schools.com/html/html_lists.asp">Lists</a></li>
+                    <li><a href="https://www.w3schools.com/html/html_lists.asp">Tables</a></li>
+                    <li><a href="https://validator.w3.org/">HTML Validator</a></li>
+                    <li></li><a href="https://www.w3schools.com/colors/colors_picker.asp">
+                        <img src="https://www.usability.gov/sites/default/files/images/color-wheel.png"width="50" height="50"></a>
+                </ul>
+            </nav>
+        <hr>
+        <main>
+        </main>
+
+<!--Table with HTML commands-->
+        <header>
+            <h2 style="text-align:center;"> HTML COMMANDS</h2>
+
+            <table border="1">
+                <tr>
+                    <th>Item</th>
+                    <th>Desription</th>
+                </tr>
+
+                <!--head tags-->
+                <tr>
+                    <td> Head Tags</td>
+                    <td>
+                        <p>&lt;head></p>
+                       <p>&lt;title></p>
+                        <p>&lt;meta charset="utf-8"></p>
+                    </td>
+                </tr>
+
+                <!--Structual Elements-->
+                <tr>
+                    <td>Structural Elements</td>
+                    <td>
+                        <p>&lt;header></p>
+                        <p>&lt;nav></p>
+                        <p>&lt;main></p>
+                        <p>&lt;footer></p>
+                    </td>
+                </tr>
+
+                <!--Hypertext-->
+                <tr>
+                    <td>HyperText</td>
+                    <td>Anchor tag: &lt;a href=" "> displayed text &lt;a></td>
+                </tr>
+
+                <!--Horizontal rule-->
+                <tr>
+                    <td>Horizontal Rule</td>
+                    <td>&lt;hr></td>
+                </tr>
+
+                <!--Breaks-->
+                <tr>
+                    <td>Breaks</td>
+                    <td>
+                        <p>&lt;p> New Paragraph</p>
+                        <p>&lt;br> Line Break</p>
+                    </td>
+                </tr>
+
+                <!--Formatting-->
+                <tr>
+                    <td>Formatting</td>
+                    <td>
+                        <p>&lt;b> Bold and &lt;strong></p>
+                        <p>&lt;i> Italic and &lt;emphasis></p>
+                    </td>
+                </tr>
+
+                <!--Headers-->
+                <tr>
+                    <td>Headers</td>
+                    <td>&lt;h1> - &lt;h5></td>
+                </tr>
+
+                <!--tables-->
+                <tr>
+                    <td>Tables</td>
+                    <td>&lttr>, &ltth>, &lttd></td>
+                </tr>
+
+                <!--Images-->
+                <tr>
+                    <td>Images</td>
+                    <td>&lta href="insert image"></td>
+                </tr>
+
+            </table>
+        </header>
+
+<!--Table with CSS Styles-->
+        <header>
+            <h2 style="text-align:center;">CSS STYLES</h2>
+
+            <table border="1">
+                <tr>
+                    <th>Style</th>
+                    <th>Description</th>
+                </tr>
+
+                <!--Background color-->
+                <tr>
+                    <td>Back-ground-color</td>
+                    <td>Changes the color of the background</td>
+                </tr>
+
+                <!--Color of text-->
+                <tr>
+                    <td>Color</td>
+                    <td>text color</td>
+                </tr>
+
+                <!--Border lines-->
+                <tr>
+                    <td>Border-collapse: collapse</td>
+                    <td>Single line border</td>
+                </tr>
+
+                <!--Border weight-->
+                <tr>
+                    <td>Border: #px;</td>
+                    <td>Border weight in pixels</td>
+                </tr>
+
+                <!--Fonts-->
+                <tr>
+                    <td>font-famly</td>
+                    <td>text font</td>
+                </tr>
+
+                <!--Font size-->
+                <tr>
+                    <td>font-size: #px</td>
+                    <td>font size in pixels</td>
+                </tr>
+
+                <!--Bolding-->
+                <tr>
+                    <td>font-weight:</td>
+                    <td>Normal or bold</td>
+                </tr>
+
+                <!--Margins-->
+                <tr>
+                    <td>margin-right: auto; margin-left:auto;</td>
+                    <td>centers table</td>
+                </tr>
+
+                <!--Tables spaces-->
+                <tr>
+                    <td>padding-left: #px; padding-right: #px</td>
+                    <td>spaces in table cells</td>
+                </tr>
+
+                <!--Aligning text-->
+                <tr>
+                    <td>text-align: (center, left, right)</td>
+                    <td>aligns text wherever specified</td>
+                </tr>
+
+            </table>
+        </header>
+
+<!--Table with Web Design Practices-->
+        <header>
+            <h2 style="text-align:center;">Website Design Best Practices</h2>
+
+            <table style="background-color:white;" border="1">
+                <tr><td>Informaiton is displayed in an organized fassion</td></tr>
+                <tr><td>Avoid using too many different fonts</td></tr>
+                <tr><td>Avoid using too many different colors</td></tr>
+                <tr><td>Website is asthetically pleasing</td></tr>
+                <tr><td>Have lots of white space</td></tr>
+                <tr><td>Minimize text</td></tr>
+                <tr><td>Show dont tell</td></tr>
+                <tr><td>Easy to navigate</td></tr>
+                <tr><td>Simple design</td></tr>
+                
+            </table>
+        </header>
+
+
+<!--Footer-->
+        <footer>
+            <hr>
+            <p style="text-align:center;"><small> (C) A O'Leary, 2022</small></p>
+            <br> Email <a href="mailto: aidan.oleary1@marist.edu"> Aidan</a>
+        </footer>
+
+    </body>
+
+</html>
