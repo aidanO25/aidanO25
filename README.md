@@ -1,8 +1,9 @@
-- 👋 Hi, I’m Aidan O'Leary and currently attending Marist College
-- 👀 I’m very interested in AI and machine learning research and hope to pursure a career in that field someday
-- 🌱 I am majoring in computer science with a concentration in software development and some of the projects I have worked on can be found in my repositories 
-- 💞️ I’m looking for any internship/career opportunities (currently an intern at J&J under Janssen R&D) and am open to networking 
-- 📫 How to reach me aidan.oleary1@marist.edu
+- 👋 Hi, I’m Aidan O'Leary and will be graduating from  Marist University this year
+- 👀 I’m interested in environmental and cognitive science and am looking to pursue a career in a similar field 
+- 🌱 My Github shows some of the projects I've worked on within and outside of school that were exciting and challenging to work on.
+- 📟 I highly suggest looking at the "OS-God" and Robotics repositories to get an idea of the software development skills I possess
+- 💞️ I’m looking for any career opportunities that are working on something exciting and thought-provoking!
+- 📫 How to reach me aidan.oleary.main@gmail.com
 
 <!---
 aidanO25/aidanO25 is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
